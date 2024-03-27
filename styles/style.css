@@ -1,0 +1,593 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+html {
+	height: 100%;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* Reset */
+
+/* Шрифты */
+
+  /* Comforta-Regular */
+@font-face {
+	font-display: swap; 
+	font-family: 'Comforta-Regular';
+	font-style: normal;
+	font-weight: 400;
+	src: url('../fonts/Comfortaa-Regular.woff2') format('woff2');
+  }
+  /* Comforta-Regular */
+
+  /* FuturaPT-Book */
+  @font-face {
+	font-display: swap; 
+	font-family: 'FuturaPT-Book';
+	font-style: normal;
+	font-weight: 400;
+	src: url('../fonts/FuturaPT-Book.woff2') format('woff2'); 
+  }
+  /* FuturaPT-Book */
+
+  /* FuturaPT-Light */
+  @font-face {
+	font-display: swap; 
+	font-family: 'FuturaPT-Light';
+	font-style: normal;
+	font-weight: 400;
+	src: url('../fonts/FuturaPT-Light.woff2') format('woff2'); 
+  }
+  /* FuturaPT-Light */
+
+  /* FuturaPT-Medium */
+  @font-face {
+	font-display: swap; 
+	font-family: 'FuturaPT-Medium';
+	font-style: normal;
+	font-weight: 500;
+	src: url('../fonts/FuturaPT-Medium.woff2') format('woff2'); 
+  }
+  /* FuturaPT-Medium */
+
+  /* Roboto-Medium */
+  @font-face {
+	font-display: swap; 
+	font-family: 'Roboto-Medium';
+	font-style: normal;
+	font-weight: 500;
+	src: url('../fonts/Roboto-Medium.woff2') format('woff2'); 
+  }
+  /* Roboto-Medium */
+
+  /* Roboto-Regular */
+  @font-face {
+	font-display: swap; 
+	font-family: 'Roboto-Regular';
+	font-style: normal;
+	font-weight: 400;
+	src: url('../fonts/Roboto-Regular.woff2') format('woff2'); 
+  }
+  /* Roboto-Medium */
+
+  /* RobotoFlex-Regular */
+  @font-face {
+	font-display: swap; 
+	font-family: 'RobotoFlex-Regular';
+	font-style: normal;
+	font-weight: 400;
+	src: url('../fonts/RobotoFlex-Regular.woff2') format('woff2'); 
+  }
+  /* RobotoFlex-Regular */
+
+  /* Suisselntl-Medium */
+  @font-face {
+	font-display: swap; 
+	font-family: 'Suisselntl-Medium';
+	font-style: normal;
+	font-weight: 500;
+	src: url('../fonts/SuisseIntl-Medium.woff2') format('woff2'); 
+  }
+  /* Suisselntl-Medium */
+
+  /* Suisselntl-Regular */
+  @font-face {
+	font-display: swap; 
+	font-family: 'Suisselntl-Regular';
+	font-style: normal;
+	font-weight: 400;
+	src: url('../fonts/SuisseIntl-Regular.woff2') format('woff2');
+  }
+  /* Suisselntl-Regular */
+
+/* Шрифты */
+
+/* Общие стили для шрифтов*/
+
+body {
+  font-style: normal;
+  font-size: 16px;
+  font-weight: normal;
+  color: #404040;
+}
+
+/* Общие стили для шрифтов*/
+
+/* Общие стили для изображений */
+
+img {
+	max-width: 100%;
+	height: auto;
+}
+
+/* Общие стили для изображений */
+
+/* Паддинги не меняющие размер блока */
+
+html {
+  box-sizing: border-box;
+}
+
+*, *::before, *::after {
+  box-sizing: inherit;
+}
+
+/* Паддинги не меняющие размер блока */
+
+/* Header */
+/* Nav menu */
+
+.wrapper_header_nav {
+  max-width: 1224px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 32px;
+  margin-bottom: 70px;
+}
+
+.list_menu {
+  display: flex;
+  justify-content: space-between;
+  gap: 55px;
+}
+
+.concierge_servise {
+  font-size: 16px;
+  font-family: 'FuturaPT-Book';
+  text-decoration: none;
+  color: #404040;
+}
+
+.scrollto {
+  font-size: 16px;
+  font-family: 'FuturaPT-Book';
+  text-decoration: none;
+color: #404040;
+}
+
+.application {
+  width: 173px;
+  height: 56px;
+  border: 0;
+  border-radius: 2em;
+  color: #FFFFFF;
+  font-size: 16px;
+  font-family: 'FuturaPT-Medium';
+  background-color: #B61E1D;
+  transition: 0.3s;  
+}
+
+.application:hover {
+  background-color: #680303;
+  transition: 0.3s;
+}
+/* Nav menu */
+
+/* cover */
+.wrapper_heading_cover {
+  max-width: 1332px;
+  min-height: 610px;
+  margin: 0 auto; 
+  position: relative;
+  margin-bottom: 120px;
+}
+
+.heading_cover {
+  padding-top: 44px;
+  margin-bottom: 165px;
+}
+
+.heading_top {
+  background: url(../images/gpeg/svg/red_kat.png) no-repeat left;
+  font-family: 'FuturaPT-Medium';
+  font-size: 90px;
+  padding-left: 134px;
+  color: #000000;
+}
+
+.heading_bottom {
+  font-family: 'FuturaPT-Medium';
+  font-size: 90px;
+  color: #000000;
+}
+
+.first_word {
+  color: #B61E1D;
+}
+
+.background_img {
+  position: absolute;
+  background-color: rgba(221, 221, 221, 0.1);
+  width: 708px;
+  height: 610px;
+  right: 0px;
+  top: 0px;
+  z-index: 20;
+}
+
+.img_vhite_dog {
+  position: absolute;
+  right: 0px;
+  top: 0px;
+  z-index: -10;
+}
+
+.cite_heading {
+  display: inline-block;
+  font-size: 24px;
+  font-family: 'FuturaPT-Book';
+  line-height: 32px;
+}
+
+.red_circle {
+  position: absolute;
+  border-radius: 50%;
+  background-color: #B61E1D;
+  border: 0;
+  width: 200px;
+  height: 200px;
+  box-shadow: 0px 0px 0px 39px rgb(238, 153, 153);
+  font-family: 'FuturaPT-Book';
+  font-size: 24px;
+  color: #FFFFFF;
+  text-decoration: none;
+  left: 513px;
+  bottom: 60px;
+}
+/* cover */
+
+/* Header */
+
+/* section_opportunities */
+.wrapper_opportunities {
+  max-width: 1224px;
+  margin: 0 auto;
+  margin-bottom: 120px;
+}
+
+.opportunities_heading {
+  font-family: 'FuturaPT-Medium';
+  font-size: 40px;
+  color: #282828;
+  margin-bottom: 45px;
+}
+
+.img_card {
+  margin-bottom: 94px;
+  margin-top: 28px;
+  margin-left: 36px;
+  transition: filter 0.3s;
+}
+
+.heading_card {
+  font-family: 'FuturaPT-Medium';
+  font-size: 32px;
+  color: #282828;
+  line-height: 120%;
+  margin-left: 32px;
+}
+
+.text_card {
+  position: absolute;
+  font-family: 'FuturaPT-Book';
+  font-size: 20px;
+  color: #282828;
+  line-height: 140%;
+  margin-left: 32px;
+  bottom: 24px;
+}
+
+.opportunities_cards {
+  display: flex;
+  justify-content: space-between;
+}
+
+.opportunities_card {
+  position: relative;
+  width: 288px;
+  height: 380px;
+  background-color: #FAFAFA;
+  border-radius: 1em;
+  transition: 0.5s;
+}
+
+.opportunities_card:hover, .opportunities_card:focus {
+  background-color: #B61E1D;
+  transition: 0.5s;
+}
+
+.opportunities_card:hover .heading_card,
+.opportunities_card:focus .heading_card,
+.opportunities_card:hover .text_card,
+.opportunities_card:focus .text_card {
+  color: white; 
+}
+
+.opportunities_card:hover .img_card,
+.opportunities_card:focus .img_card {
+  filter: invert(1); 
+  transition: filter 0.3s;
+}
+
+/* section_opportunities */
+
+/* section_management */
+
+.wrapper_management {
+  max-width: 1243px;
+  margin: 0 auto;
+  position: relative;
+  display: flex;
+  align-items: center;
+  margin-bottom: 150px;
+}
+
+.icondog_red {
+  position: absolute;
+  top: 86px;
+  left: -19px;
+}
+
+.management_img {
+  margin-right: 60px;
+}
+
+.heading_management {
+  margin-bottom: 24px;
+  font-family: 'FuturaPT-Medium';
+  font-size: 40px;
+  line-height: 120%;
+  color: #000000;
+}
+
+.text_management {
+  font-family: 'FuturaPT-Book';
+  font-size: 20px;
+  line-height: 120%;
+}
+
+/* section_management */
+
+/* section_statistics */
+
+.wrapper_uvivo {
+  max-width: 1224px;
+  margin: 0 auto;
+  margin-bottom: 168px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.heading_uvivo {
+  font-family: 'FuturaPT-Medium';
+  font-size: 40px;
+  line-height: 120%;
+  color: #000000;
+  margin-bottom: 15px;
+}
+
+.text_uvivo {
+  font-family: 'FuturaPT-Book';
+  font-size: 20px;
+  line-height: 120%;
+  margin-bottom: 39px;
+}
+
+.application_uvivo {
+  border-radius: 3em;
+  color: #FFFFFF;
+  background-color: #B61E1D;
+  font-family: 'FuturaPT-Medium';
+  font-size: 16px;
+  padding: 12px 32px;
+  border: 0;
+}
+
+.card_statistics_uvivo {
+  max-width: 600px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+}
+
+.card_statistics {
+  border: 2px solid #B61E1D;
+  border-radius: 2em;
+  width: 288px;
+  height: 130px;
+  text-align: center;
+}
+
+.one {
+  background-color: #B61E1D;
+}
+
+.heading_one, .text_one {
+  color: #FFFFFF;
+}
+
+.heading_statistics {
+  font-family: 'FuturaPT-Medium';
+  font-size: 40px;
+  margin-top: 24px;
+  margin-bottom: 5px;
+}
+
+.text_statistics {
+  font-family: 'FuturaPT-Book';
+  font-size: 20px;
+}
+
+/* section_statistics */
+
+/* section_director */
+
+.wrapper_director {
+  max-width: 1266px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  margin-bottom: 160px;
+}
+
+.info_director {
+  width: 600px;
+  min-height: 863px;
+  border-radius: 2em;
+  position: relative;
+  background-color: #FAFAFA;
+}
+
+.img_red_marmot {
+  position: absolute;
+  top: 79px;
+  right: -40px;
+}
+
+.img_red_two_slash {
+  position: absolute;
+  top: 60px;
+  left: 60px;
+}
+
+.img_red_cat {
+  position: absolute;
+  bottom: 320px;
+  left: -50px;
+}
+
+.opinion_director {
+  margin-top: 124px;
+  margin-left: 60px;
+  margin-bottom: 107px;
+  font-family: 'FuturaPT-Book';
+  font-size: 32px;
+  line-height: 140%;
+}
+
+.heading_name_director {
+  margin-left: 60px;
+  margin-bottom: 15px;
+  font-family: 'FuturaPT-Medium';
+  font-size: 40px;
+}
+
+.post {
+  margin-bottom: 31px;
+  margin-left: 60px;
+  font-family: 'FuturaPT-Book';
+  font-size: 24px;
+}
+
+.presentation {
+  margin-left: 60px;
+  font-family: 'FuturaPT-Book';
+  font-size: 16px;
+  line-height: 120%;
+}
+
+/* section_director */
+
+/* section_work */
+
+.wrapper_work {
+  max-width: 1224px;
+  margin: 0 auto;
+  margin-bottom: 120px;
+}
+
+.blocks_work {
+  display: flex;
+  justify-content: space-between;
+}
+
+.heading_work {
+  font-family: 'FuturaPT-Medium';
+  font-size: 40px;
+  margin-bottom: 45px;
+}
+
+.number_work {
+  font-family: 'FuturaPT-Medium';
+  font-size: 40px;
+  color: #B61E1D;
+  margin-bottom: 21px;
+}
+
+.text_work {
+  font-family: 'FuturaPT-Book';
+  font-size: 20px;
+  line-height: 120%;
+}
+
+/* section_work */
+
+/* section_director */
+
+.wrapper_about {
+  min-width: 100vh;
+}
+
+/* section_director */
